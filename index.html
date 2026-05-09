@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  	<title>Optoelectronics Devices · Nano Library</title>
+  	<title>Optoelectronic Devices · Nano Library</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
@@ -19,6 +19,20 @@
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/v2/layout.css" />
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/v2/components.css" />
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/v2/animations.css" />
+
+	<style>
+		.content-list { 
+			counter-reset: item-counter; 
+		}
+
+		.content-item  { 
+			counter-increment: item-counter; 
+		}
+
+		.item-num::before {
+			content: counter(item-counter, decimal-leading-zero);
+   		}
+	</style>
 </head>
 <body>
 	<div class="site-shell">
@@ -29,7 +43,7 @@
 			</a>
 			<div class="site-header-inner">
 			<div class="header-ornament">✦ · · ✦ · · ✦</div>
-			<a href="index.html" class="site-title">Optoelectronics Devices</a>
+			<a href="index.html" class="site-title">Optoelectronic Devices</a>
 			<p class="site-subtitle">A comprehensive guide to electromagnetic theory, waveguide propagation, integrated optical devices, and non-linear optics.</p>
 			<p class="index-intro">
 				A personal collection of light-matter interactions, tended in quiet sips of good tea.
